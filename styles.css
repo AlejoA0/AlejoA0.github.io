@@ -118,6 +118,10 @@ body {
   margin: 0 0 12px;
 }
 
+.accent-mint, .accent-lav, .accent-peach {
+  display: inline-block;
+}
+
 .accent-mint { color: var(--mint); }
 .accent-lav { color: var(--lavender); }
 .accent-peach { color: var(--peach); }
@@ -201,6 +205,53 @@ body {
 }
 
 .about-text strong { color: var(--text); }
+
+/* Experience */
+.experience-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  max-width: 680px;
+}
+
+.experience-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.experience-head h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.experience-date {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--mint);
+  white-space: nowrap;
+}
+
+.experience-company {
+  margin: 0 0 14px;
+  color: var(--lavender);
+  font-size: 0.95rem;
+}
+
+.experience-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
 /* Skills */
 .skills-grid {
