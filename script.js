@@ -14,3 +14,33 @@ navLinks.querySelectorAll('a').forEach((link) => {
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+// Movimiento muy sutil en las palabras de color, como un detalle vivo de la página.
+if (window.gsap && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  gsap.to('.accent-mint, .accent-lav, .accent-peach', {
+    y: -4,
+    duration: 2.4,
+    ease: 'sine.inOut',
+    yoyo: true,
+    repeat: -1,
+    stagger: 0.3,
+  });
+
+  gsap.to('.skill-group h4, .experience-date', {
+    y: -3,
+    duration: 2.8,
+    ease: 'sine.inOut',
+    yoyo: true,
+    repeat: -1,
+    stagger: 0.2,
+  });
+
+  gsap.to('.tag-list li', {
+    y: -2,
+    duration: 2.2,
+    ease: 'sine.inOut',
+    yoyo: true,
+    repeat: -1,
+    stagger: 0.08,
+  });
+}
